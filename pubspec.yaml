@@ -1,12 +1,12 @@
-name: flutter_nearby_connections
+name: flutter_nearby_connections_plus
 description: Flutter plugin support peer-to-peer connectivity and discovery of nearby devices (maintained fork with bug fixes)
-version: 1.2.0
+version: 1.2.1
 homepage: https://github.com/edgarladeira/flutter_nearby_connections_plus
 repository: https://github.com/edgarladeira/flutter_nearby_connections_plus
 issue_tracker: https://github.com/edgarladeira/flutter_nearby_connections_plus/issues
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=2.12.0 <4.0.0'
   flutter: ">=1.10.0"
 
 dependencies:

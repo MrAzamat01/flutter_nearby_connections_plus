@@ -91,7 +91,7 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_nearby_connections:
+  flutter_nearby_connections_plus:
     dependency: "direct main"
     description:
       path: ".."

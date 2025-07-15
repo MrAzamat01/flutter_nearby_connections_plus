@@ -1,3 +1,7 @@
+## 1.2.1
+- Fixed some bugs.
+
+
 ## 1.2.0
 - Fixed Android device discovery issues reported in multiple GitHub issues
 - Updated Kotlin compatibility to support latest Android build tools
