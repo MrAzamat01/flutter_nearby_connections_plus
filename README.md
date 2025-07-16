@@ -26,7 +26,7 @@ This package has been thoroughly tested and confirmed working with:
 ## Installation
 ```yaml
 dependencies:
-  flutter_nearby_connections_plus: ^1.2.1
+  flutter_nearby_connections_plus: ^1.2.2
 ```
 
 ### Flutter plugin supports peer-to-peer connectivity and discovers nearby devices for Android and IOS
