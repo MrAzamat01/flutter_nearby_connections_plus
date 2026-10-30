@@ -77,17 +77,14 @@ class LocationHelper(private val activity: Activity) : PluginRegistry.ActivityRe
                 false
             }
 
-    private fun initiateLocationServiceRequest() {
-        val mLocationRequest = LocationRequest.create()
-        val builder = LocationSettingsRequest.Builder()
-                .addLocationRequest(mLocationRequest)
-                .setAlwaysShow(true)
-        mLocationSettingsRequest = builder.build()
-    }
-
-    private fun requestLocationEnable() {
+        private fun requestLocationEnable() {
+        val settingsRequest = mLocationSettingsRequest
+        if (settingsRequest == null) {
+            result?.success(false)
+            return
+        }
         val task = LocationServices.getSettingsClient(activity)
-                .checkLocationSettings(mLocationSettingsRequest)
+                .checkLocationSettings(settingsRequest)
         task.addOnCompleteListener { t ->
             try {
                 t.getResult(ApiException::class.java)
@@ -111,4 +108,3 @@ class LocationHelper(private val activity: Activity) : PluginRegistry.ActivityRe
             }
         }
     }
-}
